@@ -10,7 +10,6 @@ module.exports = {
   ],
   rules: {
     'global-require': 0,
-    'import/no-unresolved': [2, {ignore: ['electron']}],
 
     'react/prefer-stateless-function': 0,
     'react/jsx-uses-react': 2,
