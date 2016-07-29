@@ -1,2 +1,2 @@
 # eslint-config
-Common Eslint config for our Javascript 
+Common Eslint config for our Javascript
