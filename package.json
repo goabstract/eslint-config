@@ -1,7 +1,9 @@
 {
-  "name": "eslint-config-abstract",
+  "name": "@elasticprojects/eslint-config-abstract",
   "version": "0.0.1",
-  "private": true,
+  "license": "UNLICENSED",
+  "repository": "elasticprojects/eslint-config",
+  "main": "index.js",
   "scripts": {
     "lint": "eslint ."
   },
