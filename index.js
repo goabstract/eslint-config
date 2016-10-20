@@ -1,6 +1,11 @@
 module.exports = {
   parser: 'babel-eslint',
-  extends: 'airbnb',
+  extends: [
+    'airbnb',
+    // overwrite airbnb and enable all import errors/warnings
+    'plugin:import/errors',
+    'plugin:import/warnings',
+  ],
   env: {
     browser: false,
   },
