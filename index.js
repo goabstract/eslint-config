@@ -2,6 +2,7 @@ module.exports = {
   parser: 'babel-eslint',
   extends: [
     'airbnb',
+    'plugin:flowtype/recommended',
     // overwrite airbnb and enable all import errors/warnings
     'plugin:import/errors',
     'plugin:import/warnings',
@@ -10,6 +11,7 @@ module.exports = {
     browser: false,
   },
   plugins: [
+    'flowtype',
     'import',
     'react',
   ],
@@ -21,5 +23,6 @@ module.exports = {
     'no-console': 0,
     'func-names': 0,
     'object-curly-spacing': [1, 'never'],
+    'import/no-webpack-loader-syntax': 0,
   },
 };
