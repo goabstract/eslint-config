@@ -21,5 +21,6 @@ module.exports = {
     'no-console': 0,
     'func-names': 0,
     'object-curly-spacing': [1, 'never'],
+    'import/no-webpack-loader-syntax': 0,
   },
 };
