@@ -1,28 +1,16 @@
 module.exports = {
-  parser: 'babel-eslint',
-  extends: [
-    'airbnb',
-    'plugin:flowtype/recommended',
-    // overwrite airbnb and enable all import errors/warnings
-    'plugin:import/errors',
-    'plugin:import/warnings',
-  ],
-  env: {
-    browser: false,
-  },
-  plugins: [
-    'flowtype',
-    'import',
-    'react',
-  ],
+  parser: "babel-eslint",
+  extends: [ "react-app" ],
+  env: { browser: false },
+  plugins: [ "prettier" ],
   rules: {
-    'react/prefer-stateless-function': 0,
-    'react/jsx-filename-extension': 0,
-    'import/prefer-default-export': 0,
-    'global-require': 0,
-    'no-console': 0,
-    'func-names': 0,
-    'object-curly-spacing': [1, 'never'],
-    'import/no-webpack-loader-syntax': 0,
-  },
+    // This doesn't work for us because we use `inject-loader` for testing JS
+    // files, and can't be automatically configured in webpack.config.js.
+    "import/no-webpack-loader-syntax": "off",
+    // Prettier automatically uses the least amount of parens possible, so this
+    // does more harm than good.
+    "no-mixed-operators": "off",
+    // Enforce that code is formatted with prettier.
+    "prettier/prettier": "error"
+  }
 };
