@@ -1,8 +1,8 @@
 module.exports = {
   parser: "babel-eslint",
-  extends: [ "react-app" ],
+  extends: ["react-app"],
   env: { browser: false },
-  plugins: [ "prettier" ],
+  plugins: ["prettier"],
   rules: {
     // This doesn't work for us because we use `inject-loader` for testing JS
     // files, and can't be automatically configured in webpack.config.js.
