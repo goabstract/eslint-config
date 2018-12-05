@@ -1,6 +1,6 @@
 {
   "name": "@elasticprojects/eslint-config-abstract",
-  "version": "4.1.0",
+  "version": "5.0.0-1",
   "license": "UNLICENSED",
   "repository": "elasticprojects/eslint-config",
   "main": "index.js",
@@ -11,27 +11,27 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^4.8.0",
-    "eslint-config-react-app": "^2.0.1",
-    "eslint-plugin-flowtype": "^2.34.1",
-    "eslint-plugin-import": "^2.6.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "babel-eslint": "9.x",
+    "eslint": "5.x",
+    "eslint-config-react-app": "^3.0.5",
+    "eslint-plugin-flowtype": "2.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
     "eslint-plugin-mocha": "^5.2.0",
-    "eslint-plugin-prettier": "^2.0.1",
-    "eslint-plugin-react": "^7.1.0",
-    "prettier": "^1.7.0"
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "7.x",
+    "prettier": "1.15.3"
   },
   "peerDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^4.8.0",
-    "eslint-config-react-app": "^2.0.1",
-    "eslint-plugin-flowtype": "^2.34.1",
-    "eslint-plugin-import": "^2.6.0",
+    "babel-eslint": "9.x",
+    "eslint": "5.x",
+    "eslint-config-react-app": "^3.0.5",
+    "eslint-plugin-flowtype": "2.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
     "eslint-plugin-mocha": "^5.2.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-prettier": "^2.0.1",
-    "eslint-plugin-react": "^7.1.0",
-    "prettier": "^1.7.0"
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "7.x",
+    "prettier": "1.15.3"
   }
 }
