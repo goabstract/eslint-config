@@ -12,6 +12,8 @@ module.exports = {
     // Prettier automatically uses the least amount of parens possible, so this
     // does more harm than good.
     "no-mixed-operators": "off",
+    "no-unused-vars": "error",
+    "no-duplicate-imports": "error",
     // Enforce that code is formatted with prettier.
     "prettier/prettier": "error"
   }
