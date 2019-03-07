@@ -15,6 +15,8 @@ module.exports = {
     "no-unused-vars": "error",
     "no-duplicate-imports": "error",
     // Enforce that code is formatted with prettier.
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    // Explicitly disallow debugging statements
+    "no-debugger": "error"
   }
 };
