@@ -19,6 +19,6 @@ module.exports = {
     // Explicitly disallow debugging statements
     "no-debugger": "error",
     // Disallow return await blah(); which is not needed outside of try/catch
-    "no-return-await": "error",
+    "no-return-await": "error"
   }
 };
