@@ -17,6 +17,8 @@ module.exports = {
     // Enforce that code is formatted with prettier.
     "prettier/prettier": "error",
     // Explicitly disallow debugging statements
-    "no-debugger": "error"
+    "no-debugger": "error",
+    // Disallow return await blah(); which is not needed outside of try/catch
+    "no-return-await": "error"
   }
 };
