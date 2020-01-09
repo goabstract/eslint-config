@@ -9,6 +9,7 @@ module.exports = {
     "import/no-webpack-loader-syntax": "off",
     "import/order": "warn",
     "mocha/no-exclusive-tests": "error",
+    curly: ["error", "all"],
     // Prettier automatically uses the least amount of parens possible, so this
     // does more harm than good.
     "no-mixed-operators": "off",
