@@ -7,7 +7,41 @@ module.exports = {
     // This doesn't work for us because we use `inject-loader` for testing JS
     // files, and can't be automatically configured in webpack.config.js.
     "import/no-webpack-loader-syntax": "off",
-    "import/order": "warn",
+    "import/order": [
+      "error",
+      {
+        alphabetize: {
+          order: "asc"
+        },
+        pathGroups: [
+          {
+            pattern: "abstract-di/**",
+            group: "external",
+            position: "after"
+          },
+          {
+            pattern: "core/**",
+            group: "external",
+            position: "after"
+          },
+          {
+            pattern: "desktop/**",
+            group: "external",
+            position: "after"
+          },
+          {
+            pattern: "support/**",
+            group: "external",
+            position: "after"
+          },
+          {
+            pattern: "web/**",
+            group: "external",
+            position: "after"
+          }
+        ]
+      }
+    ],
     "mocha/no-exclusive-tests": "error",
     curly: ["error", "all"],
     // Prettier automatically uses the least amount of parens possible, so this
