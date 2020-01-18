@@ -38,6 +38,12 @@ module.exports = {
             pattern: "web/**",
             group: "external",
             position: "after"
+          },
+          {
+            pattern: "style.scss",
+            patternOptions: { matchBase: true },
+            group: "index",
+            position: "after"
           }
         ]
       }
