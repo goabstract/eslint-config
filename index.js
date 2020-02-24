@@ -13,6 +13,7 @@ module.exports = {
         alphabetize: {
           order: "asc"
         },
+        pathGroupsExcludedImportTypes: ["builtin"],
         pathGroups: [
           {
             pattern: "abstract-di/**",
