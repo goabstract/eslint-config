@@ -56,6 +56,8 @@ module.exports = {
     // Disallow return await blah(); which is not needed outside of try/catch
     "no-return-await": "error",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+    // event.keycode is deprecated, prefer using event.key.
+    "unicorn/prefer-event-key": "warn"
   }
 };

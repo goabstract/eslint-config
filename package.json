@@ -23,6 +23,7 @@
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-unicorn": "^22.0.0",
     "prettier": "1.19.1"
   },
   "peerDependencies": {
@@ -38,6 +39,7 @@
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-unicorn": "^22.0.0",
     "prettier": "1.19.1"
   }
 }
