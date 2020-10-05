@@ -2,7 +2,7 @@ module.exports = {
   parser: "babel-eslint",
   extends: ["react-app", "plugin:import/errors", "plugin:import/warnings"],
   env: { browser: false },
-  plugins: ["mocha", "react-hooks", "prettier", "unicorn"],
+  plugins: ["mocha", "react-hooks", "prettier"],
   rules: {
     // This doesn't work for us because we use `inject-loader` for testing JS
     // files, and can't be automatically configured in webpack.config.js.
