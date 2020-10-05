@@ -2,7 +2,7 @@ module.exports = {
   parser: "babel-eslint",
   extends: ["react-app", "plugin:import/errors", "plugin:import/warnings"],
   env: { browser: false },
-  plugins: ["mocha", "react-hooks", "prettier"],
+  plugins: ["mocha", "react-hooks", "prettier", "unicorn"],
   rules: {
     // This doesn't work for us because we use `inject-loader` for testing JS
     // files, and can't be automatically configured in webpack.config.js.
@@ -56,6 +56,8 @@ module.exports = {
     // Disallow return await blah(); which is not needed outside of try/catch
     "no-return-await": "error",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+    // event.keycode is deprecated, prefer using event.key.
+    "unicorn/prefer-event-key": "warn"
   }
 };
