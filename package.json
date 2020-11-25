@@ -1,6 +1,6 @@
 {
   "name": "@elasticprojects/eslint-config-abstract",
-  "version": "6.1.0",
+  "version": "6.1.1",
   "license": "UNLICENSED",
   "repository": "elasticprojects/eslint-config",
   "main": "index.js",
