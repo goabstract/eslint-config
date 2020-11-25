@@ -11,36 +11,36 @@ module.exports = {
       "error",
       {
         alphabetize: {
-          order: "asc"
+          order: "asc",
         },
         pathGroups: [
           {
             pattern: "abstract-di/**",
             group: "external",
-            position: "after"
+            position: "after",
           },
           {
             pattern: "core/**",
             group: "external",
-            position: "after"
+            position: "after",
           },
           {
             pattern: "desktop/**",
             group: "external",
-            position: "after"
+            position: "after",
           },
           {
             pattern: "support/**",
             group: "external",
-            position: "after"
+            position: "after",
           },
           {
             pattern: "web/**",
             group: "external",
-            position: "after"
-          }
-        ]
-      }
+            position: "after",
+          },
+        ],
+      },
     ],
     "mocha/no-exclusive-tests": "error",
     curly: ["error", "all"],
@@ -56,6 +56,8 @@ module.exports = {
     // Disallow return await blah(); which is not needed outside of try/catch
     "no-return-await": "error",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
-  }
+    "react-hooks/exhaustive-deps": "warn",
+    // Explicitly disallow shorthand syntax <></>
+    "react/jsx-fragments": ["error", "element"],
+  },
 };
