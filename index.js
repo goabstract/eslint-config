@@ -57,6 +57,8 @@ module.exports = {
     // Disallow return await blah(); which is not needed outside of try/catch
     "no-return-await": "error",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+    // Explicitly disallow shorthand syntax <></>
+    "react/jsx-fragments": ["error", "element"]
   }
 };
