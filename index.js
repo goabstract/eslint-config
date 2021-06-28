@@ -1,6 +1,6 @@
 module.exports = {
   parser: "babel-eslint",
-  extends: ["react-app", "plugin:import/errors", "plugin:import/warnings"],
+  extends: ["eslint:recommended", "react-app", "plugin:import/errors", "plugin:import/warnings"],
   env: { browser: false },
   plugins: ["mocha", "react-hooks", "prettier"],
   rules: {
@@ -43,6 +43,8 @@ module.exports = {
         ]
       }
     ],
+    // Turn off anchor a11y warnings
+    "jsx-a11y/anchor-is-valid": "off",
     "mocha/no-exclusive-tests": "error",
     curly: ["error", "all"],
     // Prettier automatically uses the least amount of parens possible, so this
