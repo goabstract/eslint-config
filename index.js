@@ -1,6 +1,11 @@
 module.exports = {
   parser: "babel-eslint",
-  extends: ["eslint:recommended", "react-app", "plugin:import/errors", "plugin:import/warnings"],
+  extends: [
+    "eslint:recommended",
+    "react-app",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
   env: { browser: false },
   plugins: ["mocha", "react-hooks", "prettier"],
   rules: {
