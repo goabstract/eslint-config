@@ -1,0 +1,39 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - "*"
+
+  # workaround for dependabot PRs
+  pull_request:
+    branches:
+      - master
+    paths:
+      - package.json
+      - yarn.lock
+
+jobs:
+  test:
+    name: Test
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node_modules-v1-${{ hashFiles('.nvmrc') }}
+          restore-keys: |
+            ${{ runner.os }}-node_modules-v1
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+
+      - run: yarn install
+
+      - run: yarn lint
