@@ -4,7 +4,7 @@ module.exports = {
     "eslint:recommended",
     "react-app",
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
   ],
   env: { browser: false },
   plugins: ["mocha", "react-hooks", "prettier"],
@@ -16,37 +16,37 @@ module.exports = {
       "error",
       {
         alphabetize: {
-          order: "asc"
+          order: "asc",
         },
         pathGroupsExcludedImportTypes: ["builtin"],
         pathGroups: [
           {
             pattern: "abstract-di/**",
             group: "external",
-            position: "after"
+            position: "after",
           },
           {
             pattern: "core/**",
             group: "external",
-            position: "after"
+            position: "after",
           },
           {
             pattern: "desktop/**",
             group: "external",
-            position: "after"
+            position: "after",
           },
           {
             pattern: "support/**",
             group: "external",
-            position: "after"
+            position: "after",
           },
           {
             pattern: "web/**",
             group: "external",
-            position: "after"
-          }
-        ]
-      }
+            position: "after",
+          },
+        ],
+      },
     ],
     // Turn off anchor a11y warnings
     "jsx-a11y/anchor-is-valid": "off",
@@ -66,6 +66,6 @@ module.exports = {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     // Explicitly disallow shorthand syntax <></>
-    "react/jsx-fragments": ["error", "element"]
-  }
+    "react/jsx-fragments": ["error", "element"],
+  },
 };
