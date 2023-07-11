@@ -15,7 +15,7 @@ on:
 
 jobs:
   test:
-    name: Test
+    name: Lint
 
     runs-on: ubuntu-latest
 
