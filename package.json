@@ -1,6 +1,6 @@
 {
   "name": "@elasticprojects/eslint-config-abstract",
-  "version": "6.2.1",
+  "version": "6.2.3",
   "license": "UNLICENSED",
   "repository": "goabstract/eslint-config",
   "main": "index.js",
@@ -19,8 +19,8 @@
     "eslint": "^8.0.0",
     "eslint-config-react-app": "^7.0.0",
     "eslint-plugin-mocha": "^10.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0",
     "typescript": "^4.x"
   },
   "peerDependencies": {
@@ -28,7 +28,7 @@
     "eslint": "^8.0.0",
     "eslint-config-react-app": "^7.0.0",
     "eslint-plugin-mocha": "^10.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.0.0"
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0"
   }
 }
